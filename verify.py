@@ -9,8 +9,8 @@ intents.members = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-VERIFIED_ROLE_ID = 1330194419399528508
-VERIFICATION_CHANNEL_ID = 1330202530688274614
+VERIFIED_ROLE_ID = 1234567890 #your role ID
+VERIFICATION_CHANNEL_ID = 1234567890 #your channle ID
 
 VERIFICATION_MESSAGE = "React with ✅ to verify yourself and gain access to the server!"
 
@@ -65,4 +65,4 @@ async def on_raw_reaction_remove(payload):
                 await member.remove_roles(role)
                 print(f"Removed Verified role from {member.name}")
 
-bot.run('MTMzMDI5MjMxNzQ4MzE3NTk0OA.GQYfjb.rDQF1nfGQ7DtvepZgFz_adBBi6eCkW643rZo1w')
+bot.run('your token')
